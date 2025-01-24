@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #counterCount {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #333;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <p id="counterCount">0</p>
+    <div class="btn-container">
+        <button id="btnDecrease" class="btn">Decrease</button>
+        <button id="btnReset" class="btn">Reset</button>    
+        <button id="btnIncrease" class="btn">Increase</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
